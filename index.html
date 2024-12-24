@@ -27,7 +27,8 @@
 <body>
     <h1>App Settings Links</h1>
     
-     <button onclick="openLink('intent:#Intent;component=com.android.settings/.applications.ManageApplications;end')">
+     <button onclick="openLink('intent:#Intent;component=com.android.settings/.Settings$StorageUseActivity;end
+')">
         Open Manage Applications
     </button>
 
@@ -61,13 +62,13 @@
 
         <button onclick="openLink('intent://com.sec.android.app.popupcalculator/#Intent;scheme=android-app;end')">حاسبه </button>
 
-    <button onclick="openLink('intent:#Intent;action=android.settings.APPLICATION_SETTINGS;end')">Manage Apps</button>
-    <button onclick="openLink('intent:#Intent;action=android.settings.APPLICATION_DETAILS_SETTINGS;data=package:com.example.app;end')">
+    <button onclick="openLink('intent:#Intent;action=com.android.settings.APPLICATION_SETTINGS;end')">Manage Apps</button>
+    <button onclick="openLink('intent:#Intent;action=com.android.settings.APPLICATION_DETAILS_SETTINGS;data=package:com.example.app;end')">
         App Info (Replace with Package Name)
     </button>
-    <button onclick="openLink('intent:#Intent;action=android.settings.MANAGE_DEFAULT_APPS_SETTINGS;end')">Default Apps</button>
-    <button onclick="openLink('intent:#Intent;action=android.settings.APP_NOTIFICATION_SETTINGS;end')">App Permissions</button>
-    <button onclick="openLink('intent:#Intent;action=android.settings.APPLICATION_DETAILS_SETTINGS;data=package:com.example.app;end')">
+    <button onclick="openLink('intent:#Intent;action=com.android.settings.MANAGE_DEFAULT_APPS_SETTINGS;end')">Default Apps</button>
+    <button onclick="openLink('intent:#Intent;action=com.android.settings.APP_NOTIFICATION_SETTINGS;end')">App Permissions</button>
+    <button onclick="openLink('intent:#Intent;action=com.android.settings.APPLICATION_DETAILS_SETTINGS;data=package:com.example.app;end')">
         App Permissions (Specific App)
     </button>
 
