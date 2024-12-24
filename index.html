@@ -25,14 +25,9 @@
     </style>
 </head>
 <body>
-    <h1>Battery Settings Links</h1>
-    <button onclick="openLink('intent:#Intent;action=android.settings.BATTERY_SETTINGS;end')">Battery Settings</button>
-    <button onclick="openLink('intent:#Intent;action=android.intent.action.POWER_USAGE_SUMMARY;end')">Battery Usage</button>
-    <button onclick="openLink('intent:#Intent;action=android.settings.IGNORE_BATTERY_OPTIMIZATION_SETTINGS;end')">Battery Optimization</button>
-    <button onclick="openLink('intent:#Intent;action=android.settings.BATTERY_SAVER_SETTINGS;end')">Battery Saver Settings</button>
-    <button onclick="openLink('intent:#Intent;action=com.android.settings.POWER_SUPER_SAVING_MODE_SETTINGS;end')">Extreme Power Saver</button>
-    <button onclick="openLink('intent:#Intent;action=android.settings.ACTION_WIRELESS_CHARGING_SETTINGS;end')">Wireless Charging Settings</button>
-    <button onclick="openLink('intent:#Intent;action=com.android.settings.SMART_BATTERY_MANAGEMENT_SETTINGS;end')">Smart Battery Management</button>
+    <h1>Battery Settings</h1>
+    <button onclick="openLink('intent:#Intent;action=android.settings.ACTION_BATTERY_USAGE;end')">Battery Usage</button>
+    <button onclick="openLink('intent:#Intent;action=android.settings.POWER_USAGE_SUMMARY;end')">Power Usage Summary</button>
 
     <script>
         function openLink(intentUri) {
