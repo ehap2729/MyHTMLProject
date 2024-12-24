@@ -3,18 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirect to Wi-Fi Settings</title>
+    <title>Battery Settings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        button {
+            margin: 10px 0;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-    <button onclick="redirectToWifi()">Open Wi-Fi Settings</button>
+    <h1>Battery Settings Links</h1>
+    <button onclick="openLink('intent:#Intent;action=android.settings.BATTERY_SETTINGS;end')">Battery Settings</button>
+    <button onclick="openLink('intent:#Intent;action=android.intent.action.POWER_USAGE_SUMMARY;end')">Battery Usage</button>
+    <button onclick="openLink('intent:#Intent;action=android.settings.IGNORE_BATTERY_OPTIMIZATION_SETTINGS;end')">Battery Optimization</button>
+    <button onclick="openLink('intent:#Intent;action=android.settings.BATTERY_SAVER_SETTINGS;end')">Battery Saver Settings</button>
+    <button onclick="openLink('intent:#Intent;action=com.android.settings.POWER_SUPER_SAVING_MODE_SETTINGS;end')">Extreme Power Saver</button>
+    <button onclick="openLink('intent:#Intent;action=android.settings.ACTION_WIRELESS_CHARGING_SETTINGS;end')">Wireless Charging Settings</button>
+    <button onclick="openLink('intent:#Intent;action=com.android.settings.SMART_BATTERY_MANAGEMENT_SETTINGS;end')">Smart Battery Management</button>
+
     <script>
-        function redirectToWifi() {
-            window.location.href = "android.settings.ACTION_BATTERY_USAGE
-";
+        function openLink(intentUri) {
+            window.location.href = intentUri;
         }
     </script>
-    <ul class="wp-block-list">
-<li style="font-size:16px"><strong><a data-type="link" data-id="intent://com.android.settings/#Intent;scheme=android-app;end" href="intent://com.android.settings/#Intent;scheme=android-app;end">Open&nbsp;&nbsp;<img decoding="async" class="wp-image-42" style="width: 30px;" src="https://vnrombypass.romstage.com/wp-content/uploads/2023/09/settings.png" alt=""></a> <a data-type="link" data-id="intent://com.android.settings/#Intent;scheme=android-app;end" href="intent://com.android.settings/#Intent;scheme=android-app;end">Setting</a></strong></li>
-</ul>
 </body>
 </html>
