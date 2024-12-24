@@ -26,6 +26,16 @@
 </head>
 <body>
 
+
+    <h1>App Settings Links</h1>
+    <button onclick="openLink('intent:#Intent;component=com.android.settings/.applications.ManageApplications;end')">Manage Applications</button>
+    <button onclick="openLink('intent:#Intent;action=android.settings.APPLICATION_DETAILS_SETTINGS;data=package:com.android.chrome;end')">App Info (Chrome)</button>
+    <button onclick="openLink('intent:#Intent;component=com.android.settings/.Settings$DefaultAppSettingsActivity;end')">Default Apps</button>
+    <button onclick="openLink('intent:#Intent;component=com.android.settings/.Settings$RunningServicesActivity;end')">Running Apps</button>
+    <button onclick="openLink('intent:#Intent;action=android.settings.APP_NOTIFICATION_SETTINGS;end')">App Permissions</button>
+    <button onclick="openLink('intent:#Intent;action=android.settings.MANAGE_UNKNOWN_APP_SOURCES;end')">Unknown Sources</button>
+    <button onclick="openLink('intent:#Intent;component=com.android.settings/.Settings$StorageSettingsActivity;end')">Storage Management</button>
+
      <h1>File Manager Links</h1>
     <button onclick="openLink('intent:#Intent;component=com.android.documentsui/.files.FilesActivity;end')">File Manager Main</button>
     <button onclick="openLink('intent:#Intent;component=com.android.providers.downloads/.ui.DownloadListActivity;end')">Downloads</button>
