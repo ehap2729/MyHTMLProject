@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Battery Settings</title>
+    <title>App Settings</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -25,9 +25,16 @@
     </style>
 </head>
 <body>
-    <h1>Battery Settings</h1>
-    <button onclick="openLink('intent:#Intent;action=android.settings.ACTION_BATTERY_USAGE;end')">Battery Usage</button>
-    <button onclick="openLink('intent:#Intent;action=android.settings.POWER_USAGE_SUMMARY;end')">Power Usage Summary</button>
+    <h1>App Settings Links</h1>
+    <button onclick="openLink('intent:#Intent;action=android.settings.APPLICATION_SETTINGS;end')">Manage Apps</button>
+    <button onclick="openLink('intent:#Intent;action=android.settings.APPLICATION_DETAILS_SETTINGS;data=package:com.example.app;end')">
+        App Info (Replace with Package Name)
+    </button>
+    <button onclick="openLink('intent:#Intent;action=android.settings.MANAGE_DEFAULT_APPS_SETTINGS;end')">Default Apps</button>
+    <button onclick="openLink('intent:#Intent;action=android.settings.APP_NOTIFICATION_SETTINGS;end')">App Permissions</button>
+    <button onclick="openLink('intent:#Intent;action=android.settings.APPLICATION_DETAILS_SETTINGS;data=package:com.example.app;end')">
+        App Permissions (Specific App)
+    </button>
 
     <script>
         function openLink(intentUri) {
