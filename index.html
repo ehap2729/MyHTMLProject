@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect to Wi-Fi Settings</title>
+</head>
+<body>
+    <button onclick="redirectToWifi()">Open Wi-Fi Settings</button>
+    <script>
+        function redirectToWifi() {
+            window.location.href = "intent:#Intent;action=android.settings.WIFI_SETTINGS;end";
+        }
+    </script>
+</body>
+</html>
